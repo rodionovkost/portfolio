@@ -86,15 +86,6 @@ html{
 	transition: 1s;
 	cursor: pointer;
 }
-#gmail{
-	width:30px;
-	height: 30px;
-	top:15px;
-	right:-100px;
-	position: fixed;
-	transition: 1s;
-	cursor: pointer;
-}
 #hello{
 	z-index: 3;
 	color:white;
@@ -129,19 +120,20 @@ html{
 	padding-bottom: 20px;
 }
 .second_block .project{
-	left:-1500px;
+	left:-110%;
 	transition: 1.5s;
 }
 .project .img_block{
 	overflow: hidden;
-	
-}
-.project img{
-	width:600px;
 	height:300px;
 	box-shadow:0 0 10px black; 
+}
+.project img{
+	height:100%;
+	width: 100%;
 	transition: 1s;
 	cursor: pointer;
+	max-width: 100%;
 }
 .project img:hover{
 	transform: scale(1.1);
@@ -152,7 +144,7 @@ html{
 	
 }
 #all_projects{
-	left:-1500px;
+	left:-100%;
 	transition: 1s;
 }
 input[type=button]{
@@ -213,6 +205,7 @@ p a:focus:after {
 	box-shadow: 0 0 10px black;
 	opacity:0;
 	transition: 1.5s;
+
 }
 .about:after {
   content: '';
@@ -223,24 +216,24 @@ p a:focus:after {
   bottom: 0;
   background: rgba(0,0,0,.6);
   z-index: 2;
+
 }
 .about h1{
 	color:white;
 	z-index:3;
-	left:-1500px;
+	left:-100%;
 	transition: 1s;
 	margin-bottom:20px;
 }
 .about p{
 	color:white;
 	z-index:3;
-	left:-1500px;
+	left:-100%;
 	font-size: 24px;
 	transition: 1s;
 }
 .skill_block{
 	width: 100%;
-	position: relative;
 	text-align:center;
 	display: flex;
 	justify-content: center;
@@ -253,21 +246,50 @@ p a:focus:after {
 	box-shadow: 0 0 10px black;
 	opacity: 0;
 	transition: 1.5s;
+	min-height: 100vh;
 }
 .skill_block h1{
 	transition: 1s;
-	padding-bottom: 20px;
-	right: -1500px;
+	right: -100%;
 }
-#skills{
+.skills{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-#skills img{
-	max-width:20%;
-	height:250px;
+.skill{
+	width:20%;
 	opacity:0;
 	transition: 1.5s;
+	padding-top: 20px;
+}
+.skills img{
+	max-width:100%;
+	height:200px;
+	transition: 1.5s;
+}
+.skills p{
+	font-size: 24px;
+	padding: 10px;
+}
+@media (max-width: 1199.98px){
+	.skill{
+		width:25%;
+	}
+}
+@media (max-width: 991.98px){
+	.skill{
+		width:33%;
+	}
+}
+@media (max-width: 768.98px){
+	.skill{
+		width:50%;
+	}
+}
+@media (max-width: 480.98px){
+	.skill{
+		width:100%;
+	}
 }
