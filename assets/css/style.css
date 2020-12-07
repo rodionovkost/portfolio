@@ -2,8 +2,9 @@
     font-family: Futura PT Book; /* Имя шрифта */
     src: url(../fonts/FuturaPT-Book.ttf); /* Путь к файлу со шрифтом */
    }
-html{
-	overflow-x: hidden;
+html,body{
+	max-width: 100%;
+    overflow-x: hidden;
 }
 *{
 	font-family: Futura PT Book;
@@ -255,8 +256,10 @@ p a:focus:after {
 .skills{
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
+	right:-100%;
+	transition: 1s;
 }
 .skill{
 	width:20%;
@@ -272,6 +275,36 @@ p a:focus:after {
 .skills p{
 	font-size: 24px;
 	padding: 10px;
+}
+.modal_menu{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(16, 78, 131,0.7);
+	display: none;
+	z-index: 10;
+	left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.modal_menu_close{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding:10px;
+}
+#close{
+	width:50px;
+	opacity: 0;
+	transition: 1s;
+	cursor: pointer;
+}
+@media (max-width: 1370.98px){
+	.project .img_block{
+		height:250px;
+	}
 }
 @media (max-width: 1199.98px){
 	.skill{

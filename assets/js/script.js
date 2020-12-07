@@ -38,6 +38,30 @@ function ajax(){
 function php(){
     $('#php').css('opacity','1');
 }
+function bitrix(){
+    $('#bitrix').css('opacity','1');
+}
+function modx(){
+    $('#modx').css('opacity','1');
+}
+function nodejs(){
+    $('#nodejs').css('opacity','1');
+}
+function express(){
+    $('#express').css('opacity','1');
+}
+function bootstrap(){
+    $('#bootstrap').css('opacity','1');
+}
+function sql(){
+    $('#sql').css('opacity','1');
+}
+function csv(){
+    $('#csv').css('opacity','1');
+}
+function git(){
+    $('#git').css('opacity','1');
+}
 $(document).ready(function(){
 	$('.main').show(1500,function(){
 		$('#hello').css('left','25%');
@@ -86,15 +110,49 @@ $(window).scroll(function() {
     if($top >= 1300){
     	$('.skill_block').css('opacity','1');
     	$('.skill_block h1').css('right','0');
+        $('.skills').css('right','0');
     	setTimeout(html5,1000);
     	setTimeout(css3,1500);
     	setTimeout(js,2000);
     	setTimeout(jquery,2500);
         setTimeout(ajax,3000);
-        setTimeout(php,3500);
+        setTimeout(nodejs,3500);
+        setTimeout(express,4000);
+        setTimeout(bootstrap,4500);
+        setTimeout(php,5000);
+        setTimeout(bitrix,5500);
+        setTimeout(modx,6000);
+        setTimeout(sql,6500);
+        setTimeout(csv,7000);
+        setTimeout(git,7500);
     }
     else if($top <= 1300){
     	$('.skill_block').css('opacity','0');
-    	$('.skill_block h1').css('right','-100%');
+        $('.skill_block h1').css('right','-100%');
+        $('.skills').css('right','-100%');
     }
   });
+$('#hamb').click(function(){
+        $(this).css('left','-100px');
+        $('.top_menu').css('background','rgba(16, 78, 131,0)');
+        $('#inst').css('right','-100px');
+        $('#vk').css('right','-100px');
+        $('#telegram').css('right','-100px');
+        $('#lang').css('right','-100px');
+        $('.modal_menu').show(1500,function(){
+            $('#close').css('opacity','1');
+            $('html').css('overflow-y','hidden');
+        });
+});
+$('#close').click(function(){
+        $('#close').css('opacity','0');
+        $('.modal_menu').hide(1500,function(){
+            $('#hamb').css('left','10px');
+            $('.top_menu').css('background','rgba(16, 78, 131,0.9)');
+            $('#lang').css('right','10px');
+            $('#inst').css('right','80px');
+            $('#vk').css('right','125px');
+            $('#telegram').css('right','165px');
+            $('html').css('overflow-y','scroll');
+        });
+});
