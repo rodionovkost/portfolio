@@ -134,10 +134,10 @@ html{
 }
 .project .img_block{
 	overflow: hidden;
-	box-shadow:0 0 10px black; 
+	
 }
 .project img{
-	width:100%;
+	width:600px;
 	height:300px;
 	box-shadow:0 0 10px black; 
 	transition: 1s;
