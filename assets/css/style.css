@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Futura PT Book; /* Имя шрифта */
+    src: url(../fonts/FuturaPT-Book.ttf); /* Путь к файлу со шрифтом */
+   }
+html{
+	overflow-x: hidden;
+}
+*{
+	font-family: Futura PT Book;
+}
+.main{
+	background-image: url(../../img/main_back.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	box-shadow: 0 0 10px black;
+	display:none;
+}
+.main:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 2;
+}
+.top_menu{
+	position: fixed;
+	top:0;
+	left:0;
+	transition: 1s;
+	z-index: 5;
+	height: 60px;
+	width: 100%;
+}
+#hamb{
+	width:40px;
+	height: 40px;
+	left:-100px;
+	position: fixed;
+	transition: 1s;
+	cursor: pointer;
+}
+#inst{
+	width:30px;
+	height: 30px;
+	top:15px;
+	right:-100px;
+	position: fixed;
+	transition: 1s;
+	cursor: pointer;
+}
+#vk{
+	width:30px;
+	height: 30px;
+	top:15px;
+	right:-100px;
+	position: fixed;
+	transition: 1s;
+	cursor: pointer;
+}
+#lang{
+	color:white;
+	font-size:22px;
+	top:12px;
+	right:-100px;
+	position: fixed;
+	transition: 1s;
+}
+#lang a{
+	color:white;
+	text-decoration: none;
+}
+#telegram{
+	width:30px;
+	height: 30px;
+	top:15px;
+	right:-100px;
+	position: fixed;
+	transition: 1s;
+	cursor: pointer;
+}
+#gmail{
+	width:30px;
+	height: 30px;
+	top:15px;
+	right:-100px;
+	position: fixed;
+	transition: 1s;
+	cursor: pointer;
+}
+#hello{
+	z-index: 3;
+	color:white;
+	position: absolute;
+	left: -1000px;
+	transition: 1s;
+	top:45%;
+	width: 50%;
+	height: 10%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.second_block{
+	width: 100%;
+	position: relative;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding:20px;
+	margin-left:0;
+	margin-right: 0;
+	background-image: url(../../img/projects_back.png);
+	background-repeat: repeat;
+	box-shadow: 0 0 10px black;
+}
+.second_block h1{
+	left:-1500px;
+	transition: 1s;
+	padding-bottom: 20px;
+}
+.second_block .project{
+	left:-1500px;
+	transition: 1.5s;
+}
+.project .img_block{
+	overflow: hidden;
+	box-shadow:0 0 10px black; 
+}
+.project img{
+	width:100%;
+	height:300px;
+	box-shadow:0 0 10px black; 
+	transition: 1s;
+	cursor: pointer;
+}
+.project img:hover{
+	transform: scale(1.1);
+}
+.project p{
+	font-size: 20px;
+	padding: 10px;
+	
+}
+#all_projects{
+	left:-1500px;
+	transition: 1s;
+}
+input[type=button]{
+	width: 150px;
+	padding:10px;
+	background:rgba(16, 78, 131,1);
+	border:0;
+	color:white;
+	box-shadow:0 0 10px black;
+	font-size:20px;
+	cursor: pointer;
+	transition: 1s;
+	outline:none;
+}
+input[type=button]:hover{
+	background: rgba(16,96,165,1);
+}
+p a{
+	color:black;
+	line-height: 1.5;
+	display: inline-block;
+}
+p a:hover{
+	color: black;
+	text-decoration: none;
+	display: inline-block;
+}
+p a:after {
+	display: block;
+	left:0;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: black; /*задаём цвет линии*/
+	content: "";
+	-webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+p a:hover:after,
+p a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.about{
+	width: 100%;
+	position: relative;
+	text-align:left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding:20px;
+	margin-left:0;
+	margin-right: 0;
+	background-image: url(../../img/about_back.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: repeat;
+	box-shadow: 0 0 10px black;
+	opacity:0;
+	transition: 1.5s;
+}
+.about:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 2;
+}
+.about h1{
+	color:white;
+	z-index:3;
+	left:-1500px;
+	transition: 1s;
+	margin-bottom:20px;
+}
+.about p{
+	color:white;
+	z-index:3;
+	left:-1500px;
+	font-size: 24px;
+	transition: 1s;
+}
+.skill_block{
+	width: 100%;
+	position: relative;
+	text-align:center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding:20px;
+	margin-left:0;
+	margin-right: 0;
+	background-image: url(../../img/skill_back.jpg);
+	background-repeat: repeat;
+	box-shadow: 0 0 10px black;
+	opacity: 0;
+	transition: 1.5s;
+}
+.skill_block h1{
+	transition: 1s;
+	padding-bottom: 20px;
+	right: -1500px;
+}
+#skills{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#skills img{
+	max-width:20%;
+	height:250px;
+	opacity:0;
+	transition: 1.5s;
+}
