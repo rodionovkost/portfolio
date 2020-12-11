@@ -141,7 +141,6 @@ $('#hamb').click(function(){
         $('#lang').css('right','-100px');
         $('.modal_menu').show(1500,function(){
             $('#close').css('opacity','1');
-            $('html').css('overflow-y','hidden');
         });
 });
 $('#close').click(function(){
@@ -153,6 +152,5 @@ $('#close').click(function(){
             $('#inst').css('right','80px');
             $('#vk').css('right','125px');
             $('#telegram').css('right','165px');
-            $('html').css('overflow-y','scroll');
         });
 });
