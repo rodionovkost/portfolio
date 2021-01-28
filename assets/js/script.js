@@ -17,6 +17,9 @@ function city(){
 function knowledge_lang(){
 	$('#knowledge_lang').css('left','0');
 }
+function support_projects(){
+    $('#support_projects').css('left','0');
+}
 function success_bitrix(){
     $('#success_bitrix').css('left','0');
 }
@@ -62,6 +65,9 @@ function csv(){
 function git(){
     $('#git').css('opacity','1');
 }
+function show_projects(){
+    $('.projects .project').css('opacity','1');
+}
 $(document).ready(function(){
 	$('.main').show(1500,function(){
 		$('#hello').css('left','25%');
@@ -102,7 +108,8 @@ $(window).scroll(function() {
     	setTimeout(experience,1500);
     	setTimeout(education,2000);
     	setTimeout(knowledge_lang,2500);
-    	setTimeout(success_bitrix,3000);
+        setTimeout(support_projects,3000);
+    	setTimeout(success_bitrix,3500);
     }
     else if($top <= 900){
     	$('.about').css('opacity','0');
@@ -139,13 +146,17 @@ $('#hamb').click(function(){
         $('#vk').css('right','-100px');
         $('#telegram').css('right','-100px');
         $('#lang').css('right','-100px');
-        $('.modal_menu').show(1500,function(){
+        $('.modal_menu').css('display','flex');
+        $('.modal_menu').hide();
+        $('.modal_menu').fadeIn(1200,function(){
             $('#close').css('opacity','1');
+            $(this).children('ul').fadeIn(500);
         });
 });
 $('#close').click(function(){
         $('#close').css('opacity','0');
-        $('.modal_menu').hide(1500,function(){
+        $('.modal_menu ul').fadeOut(500);
+        $('.modal_menu').fadeOut(1200,function(){
             $('#hamb').css('left','10px');
             $('.top_menu').css('background','rgba(16, 78, 131,0.9)');
             $('#lang').css('right','10px');
@@ -154,3 +165,8 @@ $('#close').click(function(){
             $('#telegram').css('right','165px');
         });
 });
+if($('.projects')){
+    $('.projects h1').css('opacity','1');
+    setTimeout(showmenu,1000);
+    setTimeout(show_projects,400);
+}
