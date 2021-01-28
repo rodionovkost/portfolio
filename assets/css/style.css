@@ -126,7 +126,6 @@ html,body{
 }
 .project .img_block{
 	overflow: hidden;
-	height:300px;
 	box-shadow:0 0 10px black; 
 }
 .project img{
@@ -141,8 +140,7 @@ html,body{
 }
 .project p{
 	font-size: 20px;
-	padding: 10px;
-	
+	padding: 10px;	
 }
 #all_projects{
 	left:-100%;
@@ -206,7 +204,6 @@ p a:focus:after {
 	box-shadow: 0 0 10px black;
 	opacity:0;
 	transition: 1.5s;
-
 }
 .about:after {
   content: '';
@@ -310,6 +307,28 @@ p a:focus:after {
 .modal_menu a{
 	text-decoration: none;
 	color: white;
+	line-height: 1.5;
+	display: inline-block;
+}
+.modal_menu a:hover{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+}
+.modal_menu a:after {
+	display: block;
+	left:0;
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	-webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.modal_menu a:hover:after,
+.modal_menu a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 #close{
 	width:50px;
@@ -340,19 +359,37 @@ p a:focus:after {
 	opacity: 0;
 	transition: 1.5s;
 }
-@media (max-width: 1370.98px){
-	.project .img_block{
-		height:250px;
+@media (max-width: 1365.98px){
+	.skill{
+		padding-left:20px;
+		padding-right: 20px;
+	}
+	.skills img{
+		max-height:150px;
 	}
 }
 @media (max-width: 1199.98px){
 	.skill{
 		width:25%;
 	}
+	
 }
 @media (max-width: 991.98px){
 	.skill{
-		width:33%;
+		padding-left:30px;
+		padding-right: 30px;
+	}
+	.skills img{
+		max-height:120px;
+	}
+}
+@media (max-width: 890.98px){
+	.skill{
+		padding-left:30px;
+		padding-right: 30px;
+	}
+	.skills img{
+		
 	}
 }
 @media (max-width: 768.98px){
