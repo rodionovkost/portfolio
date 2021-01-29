@@ -170,3 +170,15 @@ if($('.projects')){
     setTimeout(showmenu,1000);
     setTimeout(show_projects,400);
 }
+$('.second_block .img_block img').mouseover(function(){
+    $(this).parent().parent().next().children('a').addClass('show_after_line');
+});
+$('.second_block .img_block img').mouseout(function(){
+    $(this).parent().parent().next().children('a').removeClass('show_after_line');
+});
+$('.projects .img_block img').mouseover(function(){
+    $(this).parent().parent().next().children('a').addClass('show_after_line');
+});
+$('.projects .img_block img').mouseout(function(){
+    $(this).parent().parent().next().children('a').removeClass('show_after_line');
+});
