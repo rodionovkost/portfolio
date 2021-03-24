@@ -71,7 +71,7 @@ function show_projects(){
 $(document).ready(function(){
 	$('.main').show(1500,function(){
 		$('#hello').css('left','25%');
-		setTimeout(showmenu,1000);
+		setTimeout(showmenu,500);
 	});
 });
 $(window).scroll(function() {
@@ -121,17 +121,17 @@ $(window).scroll(function() {
     	setTimeout(html5,1000);
     	setTimeout(css3,1500);
     	setTimeout(js,2000);
-    	setTimeout(jquery,2500);
-        setTimeout(ajax,3000);
-        setTimeout(nodejs,3500);
-        setTimeout(express,4000);
-        setTimeout(bootstrap,4500);
-        setTimeout(php,5000);
-        setTimeout(bitrix,5500);
-        setTimeout(modx,6000);
-        setTimeout(sql,6500);
-        setTimeout(csv,7000);
-        setTimeout(git,7500);
+        setTimeout(php,2500);
+        setTimeout(sql,3000);
+    	setTimeout(jquery,3500);
+        setTimeout(ajax,4000);
+        setTimeout(nodejs,4500);
+        setTimeout(express,5000);
+        setTimeout(bootstrap,5500);
+        setTimeout(bitrix,6000);
+        setTimeout(modx,6500);
+        //setTimeout(csv,7000);
+        setTimeout(git,7000);
     }
     else if($top <= 1300){
     	$('.skill_block').css('opacity','0');
@@ -148,15 +148,15 @@ $('#hamb').click(function(){
         $('#lang').css('right','-100px');
         $('.modal_menu').css('display','flex');
         $('.modal_menu').hide();
-        $('.modal_menu').fadeIn(1200,function(){
+        $('.modal_menu').fadeIn(400,function(){
             $('#close').css('opacity','1');
-            $(this).children('ul').fadeIn(500);
+            $(this).children('ul').fadeIn(400);
         });
 });
 $('#close').click(function(){
         $('#close').css('opacity','0');
-        $('.modal_menu ul').fadeOut(500);
-        $('.modal_menu').fadeOut(1200,function(){
+        $('.modal_menu ul').fadeOut(400);
+        $('.modal_menu').fadeOut(400,function(){
             $('#hamb').css('left','10px');
             $('.top_menu').css('background','rgba(16, 78, 131,0.9)');
             $('#lang').css('right','10px');
@@ -167,8 +167,8 @@ $('#close').click(function(){
 });
 if($('.projects')){
     $('.projects h1').css('opacity','1');
-    setTimeout(showmenu,1000);
-    setTimeout(show_projects,400);
+    setTimeout(showmenu,500);
+    setTimeout(show_projects,200);
 }
 $('.second_block .img_block img').mouseover(function(){
     $(this).parent().parent().next().children('a').addClass('show_after_line');
