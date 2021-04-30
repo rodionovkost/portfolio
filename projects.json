@@ -1,0 +1,240 @@
+mainJSON = {
+	"projects" :[
+		{
+			"id":0,
+			"name" : "Gold & Art",
+			"translite" : "goldandart",
+			"description" : "Интернет - магазин ювелирных изделий",
+			"image" : "img/projects/goldandart.jpg",
+			"responsibilities" : ["Натяжка верстки на 1C-Битрикс","Настройка всего функционала","Импорт каталога","Создание раздела \"Избранное\"","Создание формы обратной связи"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","Jquery","Ajax","Bootstrap 4","1C-Битрикс"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/goldandart.jpg"
+				},
+				{
+					"title" : "Страница списка товаров",
+					"image" : "img/fullsize_sites/goldandart_2.jpg"
+				},
+				{
+					"title" : "Страница товара",
+					"image" : "img/fullsize_sites/goldandart_3.jpg"
+				},
+				{
+					"title" : "Страница оформления заказа",
+					"image" : "img/fullsize_sites/goldandart_4.jpg"
+				},
+				{
+					"title" : "Страница \"Избранное\"",
+					"image" : "img/fullsize_sites/goldandart_5.jpg"
+				},
+				{
+					"title" : "Страница \"Контакты\"",
+					"image" : "img/fullsize_sites/goldandart_6.jpg"
+				},
+				{
+					"title" : "Личный кабинет",
+					"image" : "img/fullsize_sites/goldandart_7.jpg"
+				},
+			]
+		},
+		{
+			"id":1,
+			"name" : "Gold & Art",
+			"translite" : "goldandart_company",
+			"description" : "Сайт компании ювелирных изделий",
+			"image" : "img/projects/goldandart_company.jpg",
+			"responsibilities" : ["Натяжка верстки на bk-cms","Настройка всего функционала","Создание формы обратной связи"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","Jquery","Ajax","Bootstrap 4","BK-CMS"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/goldandart_company.jpg"
+				},
+				{
+					"title" : "Страница \"Контакты\"",
+					"image" : "img/fullsize_sites/goldandart_company_2.jpg"
+				}
+			]
+		},
+		{
+			"id":2,
+			"name" : "bk-company",
+			"translite" : "realty",
+			"description" : "Лендинг агентства недвижимости",
+			"image" : "img/projects/realty.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка сайта по макету PSD","Создание формы обратной связи"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","Jquery","Ajax","Bootstrap 4"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/realty.jpg"
+				}
+			]
+		},
+		{
+			"id":3,
+			"name" : "Авто Маркет",
+			"translite" : "automarket",
+			"description" : "Сайт скупки и продажи автомобилей",
+			"image" : "img/projects/automarket.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка всего сайта по макету Figma"],
+			"technologies" : ["HTML","CSS","JavaScript","Jquery","Bootstrap 4"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/automarket.jpg"
+				},
+				{
+					"title" : "Страница списка товаров",
+					"image" : "img/fullsize_sites/automarket_2.jpg"
+				},
+				{
+					"title" : "Страница товара",
+					"image" : "img/fullsize_sites/automarket_3.jpg"
+				},
+				{
+					"title" : "Страница услуги",
+					"image" : "img/fullsize_sites/automarket_4.jpg"
+				},
+				{
+					"title" : "Страница \"Контакты\"",
+					"image" : "img/fullsize_sites/automarket_5.jpg"
+				}
+			]
+		},
+		{
+			"id":4,
+			"name" : "Городская ритуальная служба",
+			"translite" : "ritualflowers",
+			"description" : "Интернет - магазин ритуальных товаров",
+			"image" : "img/projects/ritualflowers.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка всего сайта по макету"],
+			"technologies" : ["HTML","CSS","JavaScript","Jquery","Bootstrap 4"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/ritualflowers.jpg"
+				},
+				{
+					"title" : "Страница списка товаров",
+					"image" : "img/fullsize_sites/ritualflowers_2.jpg"
+				},
+				{
+					"title" : "Страница товара",
+					"image" : "img/fullsize_sites/ritualflowers_3.jpg"
+				},
+				{
+					"title" : "Страница оформления заказа",
+					"image" : "img/fullsize_sites/ritualflowers_4.jpg"
+				}
+			]
+		},
+		{
+			"id":5,
+			"name" : "АО ИСТОК",
+			"translite" : "istok",
+			"description" : "Сайт компании машиностроения",
+			"image" : "img/projects/istok.jpg",
+			"responsibilities" : ["Натяжка верстки на MODX Revolution","Настройка всего функционала","Создание формы обратной связи"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","Jquery","Ajax","Bootstrap 4","MODX Revolution"]
+		},
+		{
+			"id":6,
+			"name" : "ТверьРуф",
+			"translite" : "tverroof",
+			"description" : "Интернет - магазин строительных материалов",
+			"image" : "img/projects/tverroof.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка главной страницы по макету","Верстка страницы товара","Верстка страницы \"шапки\"и \"подвала\" страницы","Создание формы обратной связи"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","Jquery","Ajax","Bootstrap 4","1C-Битрикс"]
+		},
+		{
+			"id":7,
+			"name" : "Albaricoque",
+			"translite" : "albaricoque",
+			"description" : "Сайт - визитка преподавателя испанского",
+			"image" : "img/projects/albaricoque.jpg",
+			"responsibilities" : ["Создание сайта под ключ"],
+			"technologies" : ["HTML","CSS","JavaScript","Jquery","Bootstrap 4"],
+			"screens": [
+				{
+					"title" : "Главная страница",
+					"image" : "img/fullsize_sites/albaricoque.jpg"
+				}
+			]
+		},
+		{
+			"id":8,
+			"name" : "Александрит",
+			"translite" : "alexandrit",
+			"description" : "Интернет - магазин ювелирных изделий",
+			"image" : "img/projects/alexandrit.jpg",
+			"responsibilities" : ["Создание раздела подарки","Настройка функционала подбора и выбора подарков","Импорт каталога"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","SQL","Jquery","Ajax","Bootstrap 4","BK-CMS"]
+		},
+		{
+			"id":9,
+			"name" : "ТверьСтройка",
+			"translite" : "tverstroyka",
+			"description" : "Сайт строительной компании",
+			"image" : "img/projects/tverstroyka.jpg",
+			"responsibilities" : ["Создание блока с материалами","Создание страниц с одноэтажными и двухэтажными домами","Верстка и размещение сквозного баннера"],
+			"technologies" : ["HTML","CSS","JavaScript","Jquery"]
+		},
+		
+		{
+			"id":10,
+			"name" : "Прибрежный",
+			"translite" : "pribrezhnyy",
+			"description" : "Лендинг по продаже земельных участков",
+			"image" : "img/projects/pribrezhnyy.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка по макету"],
+			"technologies" : ["HTML","CSS","JavaScript","Jquery","Bootstrap 4"]
+		},
+		/*{
+			"id":10,
+			"name" : "Вековые традиции",
+			"translite" : "ecotradition",
+			"description" : "Сайт строительной компании",
+			"image" : "img/projects/ecotradition.jpg"
+		},*/
+		{
+			"id":11,
+			"name" : "Ojas",
+			"translite" : "ojas",
+			"description" : "Промо сайт рыболовных приманок",
+			"image" : "img/projects/ojas.jpg",
+			"responsibilities" : ["Адаптивная и кроссбраузерная верстка страницы \"Партнеры\"","Создание формы обратной связи для сотрудничества с возможностью изменения типа персоны"],
+			"technologies" : ["HTML","CSS","JavaScript","PHP","SQL","Jquery","Ajax","Bootstrap 4"]
+		},
+		{
+			"id":12,
+			"name" : "Континент",
+			"translite" : "plitkatver",
+			"description" : "Интернет - магазин плитки",
+			"image" : "img/projects/plitkatver.jpg",
+			"responsibilities" : ["Импорт каталога"],
+			"technologies" : ["PHP","SQL"]
+		},
+		{
+			"id":13,
+			"name" : "Бовис",
+			"translite" : "bovistver",
+			"description" : "Интернет - магазин строительных материалов",
+			"image" : "img/projects/bovistver.jpg",
+			"responsibilities" : ["Импорт каталога"],
+			"technologies" : ["PHP","SQL"]
+		},
+		{
+			"id":14,
+			"name" : "Чип 69",
+			"translite" : "chip69",
+			"description" : "Интернет - магазин строительных радиодеталей",
+			"image" : "img/projects/chip69.jpg",
+			"responsibilities" : ["Импорт каталога"],
+			"technologies" : ["PHP","SQL"]
+		},
+		
+	]
+}
